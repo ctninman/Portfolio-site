@@ -64,8 +64,8 @@ function About(props) {
   }, [currentTraitIndex]);
 
 	return (
-		<div>
-			<h1 style={{backgroundColor: 'orange'}}>{currentGreeting} Christopher Ninman</h1>
+		<div style={{backgroundColor: 'orange'}}>
+			<h1>{currentGreeting} Christopher Ninman</h1>
 			<h1>I am full-stack developer / software engineer / {currentTrait.description}</h1>
 			<div style={parentDiv}>
 				<img style={bottomLayer} src={PortfolioBackground} />
