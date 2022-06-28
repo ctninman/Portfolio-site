@@ -3,6 +3,8 @@ import NavBar from "./NavBar"
 import About from "./About"
 import Projects from "./Projects"
 import Blog from "./Blog"
+import Skills from "./Skills"
+import Contact from "./Contact"
 import './index.css'
 
 // styles
@@ -139,6 +141,8 @@ const IndexPage = () => {
       <About />
       <Projects />
       <Blog />
+      <Skills />
+      <Contact />
     </main>
   )
 }

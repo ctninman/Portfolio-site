@@ -23,3 +23,15 @@ export const allProjects = [
 		technologiesUsed: 'React, JavaScript, CSS, Node.js, Heroku'
 	}
 ]
+
+
+export const allSkills = [
+	{
+		skill: 'React',
+		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
+	},
+	{
+		skill: 'RubyOnRails',
+		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-original-wordmark.svg'
+	}
+]
