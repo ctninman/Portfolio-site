@@ -1,6 +1,6 @@
 import * as React from "react"
 import NavBar from "./NavBar"
-import TestComponent from "./TestComponent"
+import About from "./About"
 
 // styles
 const pageStyles = {
@@ -133,7 +133,7 @@ const IndexPage = () => {
     <main style={pageStyles}>
       <title>Christopher Ninman</title>
       <NavBar />
-      <TestComponent />
+      <About />
     </main>
   )
 }

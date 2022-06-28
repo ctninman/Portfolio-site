@@ -2,7 +2,7 @@ import React from 'react';
 
 function NavBar(props) {
 	return (
-		<div>
+		<div style={{backgroundColor: 'red'}}>
 			<div>
 				<h3>About</h3>
 			</div>
