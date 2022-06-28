@@ -69,7 +69,7 @@ function About(props) {
 			<h1>I am full-stack developer / software engineer / {currentTrait.description}</h1>
 			<div style={parentDiv}>
 				<img style={bottomLayer} src={PortfolioBackground} />
-				<img style={topLayer} src={currentTrait.image} />
+				<img className='image-top-layer' style={topLayer} src={currentTrait.image} />
 			</div>
 			{/* <div class="parent">
       <img class="image1" src="/uploads/media/default/0001/01/25acddb3da54207bc6beb5838f65f022feaa81d7.jpeg" />

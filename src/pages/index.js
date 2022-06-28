@@ -1,6 +1,9 @@
 import * as React from "react"
 import NavBar from "./NavBar"
 import About from "./About"
+import Projects from "./Projects"
+import Blog from "./Blog"
+import './index.css'
 
 // styles
 const pageStyles = {
@@ -134,6 +137,8 @@ const IndexPage = () => {
       <title>Christopher Ninman</title>
       <NavBar />
       <About />
+      <Projects />
+      <Blog />
     </main>
   )
 }
