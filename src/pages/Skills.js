@@ -4,8 +4,10 @@ import { allSkills } from './variables.js'
 
 function Skills(props) {
 	return (
-		<div style={{backgroundColor: 'lightblue'}}>
-			<h1>All My Skills</h1>
+		<>
+		<h1>Skills</h1>
+		<div className='comp-skills'>
+			
 			{allSkills.map(skill => (
 				<SingleSkill 
 					key={skill.skill}
@@ -13,6 +15,7 @@ function Skills(props) {
 				/>
 			))}
 		</div>
+		</>
 	);
 }
 

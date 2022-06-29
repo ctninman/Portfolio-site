@@ -33,5 +33,61 @@ export const allSkills = [
 	{
 		skill: 'RubyOnRails',
 		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-original-wordmark.svg'
-	}
+	},
+	{
+		skill: 'HTML5',
+		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg'
+	},
+	{
+		skill: 'CSS3',
+		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg'
+	},
+	{
+		skill: 'JavaScript',
+		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'
+	},
+	{
+		skill: 'Canva',
+		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg'
+	},
+	{
+		skill: 'BootStrap',
+		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg'
+	},
+	{
+		skill: 'Figma',
+		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg'
+	},
+	{
+		skill: 'Gatsby',
+		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gatsby/gatsby-plain.svg'
+	},
+	{
+		skill: 'Github',
+		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg'
+	},
+	{
+		skill: 'Heroku',
+		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original.svg'
+	},
+	{
+		skill: 'NodeJS',
+		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg'
+	},
+	{
+		skill: 'PostgreSQL',
+		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg'
+	},
+	{
+		skill: 'Rails',
+		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg'
+	},
+	{
+		skill: 'SQLite',
+		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg'
+	},
+	{
+		skill: 'VSCode',
+		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg'
+	},
 ]

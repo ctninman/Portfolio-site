@@ -1,3 +1,68 @@
+.about-left {
+	width: 30%;
+}
+
+.about-left h1 {
+	margin: 5px;
+	font-size: 25px;
+}
+
+.about-right {
+	width: 70%;
+}
+
+.comp-about {
+	margin-top: 40px;
+	display: flex;
+	flex-direction: row;
+}
+
+.comp-skills {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	width: 90%;
+}
+
+.comp-sidebar {
+	background-color: brown;
+	position: fixed;
+	height: 100%;
+	left: 0;
+	top: 0;
+	text-align: center;
+	width: 10%;
+	margin: 0;
+}
+
+.comp-sidebar div {
+	height: 19%;
+}
+
+.comp-sidebar h1 {
+	font-size: 15px;
+	height: 19%;
+}
+
+.comp-single-skill {
+	width: 60px;
+	margin-right: 10px;
+	margin-left: 10px;
+	
+	height: auto;
+}
+
+.comp-single-skill img {
+	width: 100%;
+}
+
+.comp-single-skill h3 {
+	font-size: 10px;
+	text-align: center;
+}
+
+
 .image-top-layer {
 	animation-duration: 0.5s;
 	animation-name: animate-pop;
@@ -14,4 +79,46 @@
 		opacity: 1;
 		transform: scale(1, 1);
 	}
+}
+
+.navbar {
+	position: fixed;
+	height: 60px;
+}
+
+.comp-navbar {
+	position: fixed;
+	z-index: 2;
+	margin: 0;
+	margin-left: 10%;
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+	justify-content: right;
+	height: 40px;
+}
+
+.comp-navbar div {
+	margin-left: 8px;
+	margin-right: 8px;
+}
+
+.comp-navbar h3 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+
+.page-style {
+	margin-left: 10%;
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content:right;
+
+}
+
+body {
+	padding: 0;
+	margin: 0;
 }

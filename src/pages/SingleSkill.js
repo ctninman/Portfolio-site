@@ -2,9 +2,9 @@ import React from 'react';
 
 function SingleSkill({skill}) {
 	return (
-		<div>
-			<h3>{skill.skill}</h3>
+		<div className='comp-single-skill'>
 			<img src={skill.skillSVG} alt={skill.skill} />
+			<h3>{skill.skill}</h3>
 		</div>
 	);
 }

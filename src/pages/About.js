@@ -64,10 +64,16 @@ function About(props) {
   }, [currentTraitIndex]);
 
 	return (
-		<div style={{backgroundColor: 'orange'}}>
-			<h1>{currentGreeting} Christopher Ninman</h1>
-			<h1>I am full-stack developer / software engineer / {currentTrait.description}</h1>
-			<div style={parentDiv}>
+		<div className='comp-about' style={{backgroundColor: 'orange'}}>
+			<div className='about-left'>
+				<h1>{currentGreeting}</h1>
+				<h1>Christopher Ninman</h1>
+				<h1>I am a</h1>
+				<h1>full-stack developer /</h1>
+				<h1>software engineer /</h1>
+				<h1>{currentTrait.description}</h1>
+			</div>
+			<div className='about-right' style={parentDiv}>
 				<img style={bottomLayer} src={PortfolioBackground} />
 				<img className='image-top-layer' style={topLayer} src={currentTrait.image} />
 			</div>

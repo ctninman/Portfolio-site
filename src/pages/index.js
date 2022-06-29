@@ -6,11 +6,12 @@ import Blog from "./Blog"
 import Skills from "./Skills"
 import Contact from "./Contact"
 import './index.css'
+import Sidebar from "./Sidebar"
 
 // styles
 const pageStyles = {
   color: "#232129",
-  padding: 96,
+  // padding: 96,
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
 }
 const headingStyles = {
@@ -135,14 +136,17 @@ const links = [
 // markup
 const IndexPage = () => {
   return (
-    <main style={pageStyles}>
+    <main >
       <title>Christopher Ninman</title>
       <NavBar />
-      <About />
-      <Projects />
-      <Blog />
-      <Skills />
-      <Contact />
+      <Sidebar />
+      <div className='page-style'>
+        <About />
+        <Projects />
+        <Blog />
+        <Skills />
+        <Contact />
+      </div>
     </main>
   )
 }
