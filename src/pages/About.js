@@ -77,6 +77,9 @@ function About(props) {
     return () => clearTimeout(timer);
 	}, [rerenderImage] )
 
+
+	
+
 	return (
 		<div className='comp-about'>
 			<div className='about-left'>
@@ -101,3 +104,74 @@ function About(props) {
 }
 
 export default About;
+
+
+
+	// useEffect(() => {
+  //   const interval = setInterval(() => {
+	// 		if (currentGreetingIndex < greetings.length) {
+  //     	setCurrentGreeting(greetings[currentGreetingIndex])    
+	// 			setCurrentGreetingIndex(currentGreetingIndex + 1)
+	// 		} else { 
+	// 			setCurrentGreeting(greetings[0])
+	// 			setCurrentGreetingIndex(1)
+	// 		}
+  //   }, 1500);
+  //   return () => clearInterval(interval);
+  // }, [currentGreetingIndex]);
+
+	// function nextTrait () {
+	// 	setCurrentTrait(aboutTraits[currentTraitIndex])    
+	// 	setCurrentTraitIndex(currentTraitIndex + 1)
+	// }
+
+	// function returnToFirstTrait () {
+	// 	setCurrentTrait(aboutTraits[0])
+	// 	setCurrentTraitIndex(1)
+	// }
+
+	// useEffect (() => {
+	// 	const renderInterval = setInterval(() => {
+	// 		setRerenderImage(rerenderImage + 1)
+	// 		console.log('rerender', rerenderImage)
+	// 		setToggleLayer(true)
+	// 		setShowLayer(true)
+  //   }, 4000);
+	// 	return () => clearInterval(renderInterval);
+	// }, [] )
+
+	// useEffect (() => {
+	// 	const renderTimeout = setTimeout(() => {
+	// 		// setShowLayer(false)
+	// 		setToggleLayer(false)
+	// 		// console.log('rerender')
+  //   }, 3500);
+	// 	return () => clearTimeout(renderTimeout);
+	// }, [rerenderImage] )
+
+
+
+	// useEffect(() => {
+	// 	// setShowLayer(false)
+	// 	setToggleLayer(false)
+  //   const photoInterval = setInterval(() => {
+	// 		if (currentTraitIndex < aboutTraits.length) {
+	// 			nextTrait()
+	// 		} else { 
+	// 			returnToFirstTrait()
+	// 		}
+  //   }, 4000);
+	// 	setRerenderImage(!rerenderImage)
+  //   return () => clearInterval(photoInterval);
+  // }, [currentTraitIndex]);
+
+	// useEffect (() => {
+	// 	// setShowLayer(true)
+	// 	setToggleLayer(true)
+	// 	// const timer = setTimeout(() => setToggleLayer(false), 3900);
+	// 	const layerTimer = setTimeout(() => setShowLayer(false), 3500);
+  //   return () => {
+	// 	// 	clearTimeout(timer);
+	// 		clearTimeout(layerTimer)
+	// 	}
+	// }, [rerenderImage] )
