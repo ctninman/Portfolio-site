@@ -61,21 +61,24 @@ function About(props) {
 			if (currentTraitIndex < aboutTraits.length) {
       	setCurrentTrait(aboutTraits[currentTraitIndex])    
 				setCurrentTraitIndex(currentTraitIndex + 1)
+				setRerenderImage(!rerenderImage)
 			} else { 
 				setCurrentTrait(aboutTraits[0])
 				setCurrentTraitIndex(1)
+				setRerenderImage(!rerenderImage)
 			}
     }, 4000);
-		setRerenderImage(!rerenderImage)
+		
     return () => clearInterval(photoInterval);
   }, [currentTraitIndex]);
 
 	useEffect (() => {
 		setShowLayer(true)
 		setToggleLayer(true)
-		const timer = setTimeout(() => setShowLayer(false), 3500);
+		const timer = setTimeout(() => setToggleLayer(false), 3500);
     return () => clearTimeout(timer);
 	}, [rerenderImage] )
+	
 
 
 	

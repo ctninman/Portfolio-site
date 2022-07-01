@@ -16,11 +16,66 @@ export const blogPosts = [
 export const allProjects = [
 	{
 		appName: 'Curate-ify',
-		technologiesUsed: 'React, JavaScript, CSS, RubyOnRails, Heroku, Canva, Figma'
+		technologiesUsed: 'React, JavaScript, CSS, RubyOnRails, Heroku, Canva, Figma',
+		videoLink: 'https://www.youtube.com/watch?v=sQUqpPwevWI&t=7s',
+		youTubeLink: true,
+		deployedSite: 'https://curate-ify.herokuapp.com/',
+		gitHubLink: 'https://github.com/ctninman/curate-ify',
+		slogan: 'Spotify Re-imagined for Album Collectors',
+		description: '',
+		goal: 'React frontend, Rails backend, design complex DB schema and perform actions using REST conventions',
+		techPoints: [
+			'Implemented OAuth 2.0 to allow users access to Spotify API and user information', 
+			'Incorporated Web Playback SDK to integrate Spotify music player into application', 
+			'Formulated API functionality using MVC pattern in Rails to perform full CRUD operations on data'
+		]
 	},
 	{
 		appName: 'World Quiz World',
-		technologiesUsed: 'React, JavaScript, CSS, Node.js, Heroku'
+		technologiesUsed: 'React, JavaScript, CSS, Node.js, Heroku',
+		videoLink: 'https://www.youtube.com/watch?v=zqCPJJaqVRo',
+		youTubeLink: true,
+		deployedSite: 'https://world-quiz-world.herokuapp.com/',
+		gitHubLink: 'https://github.com/ctninman/Phase_2_React_Project',
+		slogan: '',
+		description: '',
+		goal: 'Single-page routing React app that interacts with a robust outside API',
+		techPoints: [
+			'Utilized React state to create flashcards, filterable lists, and infinitely changing multiple-choice challenges',
+			'Built local JSON server to allow users to create profile and save their high scores'
+		]
+	},
+	{
+		appName: 'Times Tables Master',
+		technologiesUsed: 'React, JavaScript, CSS, Ruby, Rails, Canva, Heroku',
+		videoLink: 'https://www.loom.com/share/098133a34fa04deebda97138ba99daab',
+		youTubeLink: false,
+		deployedSite: 'https://times-tables-master.herokuapp.com/',
+		gitHubLink: 'https://github.com/ctninman/times-tables-master-project',
+		slogan: 'Methodically Master Multiplication',
+		description: '',
+		goal: 'React frontend/Rails backend, protect user data with authorization and authentication using sessions',
+		techPoints: [
+			'Devised authorization setup to grant teacher access to student data after authentication using BCrypt',
+			'Developed API routes to return ordered student data and custom CSS to color-code data in tables',
+			'Engineered separate site experiences for teachers and students based on authorization level'
+		]
+	},
+	{
+		appName: 'Take The Kids Out',
+		technologiesUsed: 'React, JavaScript, CSS, Ruby, ActiveRecord, Heroku',
+		videoLink: 'https://www.loom.com/share/098133a34fa04deebda97138ba99daab',
+		youTubeLink: false,
+		deployedSite: 'https://times-tables-master.herokuapp.com/',
+		gitHubLink: 'https://github.com/ctninman/Take-The-Kids-Out-Phase3-Project',
+		slogan: '',
+		description: '',
+		goal: 'Build API using ActiveRecord and create relationships and save user inputted data to support React frontend',
+		techPoints: [
+			'Custom API calls to return ordered lists of age-specific activities based on user scores',
+			'Users create locations in their city which are updated with other users’ scores and reviews',
+			'ActiveRecord associations utilizing SQLite save user favorite locations, places visited, and upcoming adventures'
+		]
 	}
 ]
 
