@@ -4,7 +4,12 @@
 
 .about-left h1 {
 	margin: 5px;
-	font-size: 25px;
+	font-size: 35px;
+}
+
+.about-left h2 {
+	margin: 5px;
+	font-size: 30px;
 }
 
 .about-right {
@@ -12,6 +17,8 @@
 }
 
 .comp-about {
+	background-color: black;
+	color: white;
 	margin-top: 40px;
 	display: flex;
 	flex-direction: row;
@@ -26,7 +33,8 @@
 }
 
 .comp-sidebar {
-	background-color: brown;
+	background-color: black;
+	color: white;
 	position: fixed;
 	height: 100%;
 	left: 0;
@@ -63,21 +71,37 @@
 }
 
 
-.image-top-layer {
+.image-top-layer-show {
 	animation-duration: 0.5s;
 	animation-name: animate-pop;
 	animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
 }
 
+.image-top-layer-hide {
+	animation-duration: 0.5s;
+	animation-name: animate-unpop;
+	animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
+}
+
 @keyframes animate-pop {
 	0% {
-		opacity: 0;
-		transform: scale(0.5, 0.5);
+		transform: translate(0px, 0px);
 	}
 
 	100% {
+		transform: translate(-1000px, 0px);
+	}
+}
+
+@keyframes animate-unpop {
+	
+	100% {
 		opacity: 1;
 		transform: scale(1, 1);
+	}
+	0% {
+		opacity: 0;
+		transform: scale(0, 0);
 	}
 }
 
@@ -87,6 +111,8 @@
 }
 
 .comp-navbar {
+	background-color: black;
+	color: white;
 	position: fixed;
 	z-index: 2;
 	margin: 0;
