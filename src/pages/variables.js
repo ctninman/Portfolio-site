@@ -23,6 +23,9 @@ export const allProjects = [
 		gitHubLink: 'https://github.com/ctninman/curate-ify',
 		slogan: 'Spotify Re-imagined for Album Collectors',
 		description: '',
+		features: [
+
+		],
 		goal: 'React frontend, Rails backend, design complex DB schema and perform actions using REST conventions',
 		techPoints: [
 			'Implemented OAuth 2.0 to allow users access to Spotify API and user information', 
@@ -39,6 +42,9 @@ export const allProjects = [
 		gitHubLink: 'https://github.com/ctninman/Phase_2_React_Project',
 		slogan: '',
 		description: '',
+		features: [
+
+		],
 		goal: 'Single-page routing React app that interacts with a robust outside API',
 		techPoints: [
 			'Utilized React state to create flashcards, filterable lists, and infinitely changing multiple-choice challenges',
@@ -54,6 +60,9 @@ export const allProjects = [
 		gitHubLink: 'https://github.com/ctninman/times-tables-master-project',
 		slogan: 'Methodically Master Multiplication',
 		description: '',
+		features: [
+
+		],
 		goal: 'React frontend/Rails backend, protect user data with authorization and authentication using sessions',
 		techPoints: [
 			'Devised authorization setup to grant teacher access to student data after authentication using BCrypt',
@@ -70,6 +79,9 @@ export const allProjects = [
 		gitHubLink: 'https://github.com/ctninman/Take-The-Kids-Out-Phase3-Project',
 		slogan: '',
 		description: '',
+		features: [
+
+		],
 		goal: 'Build API using ActiveRecord and create relationships and save user inputted data to support React frontend',
 		techPoints: [
 			'Custom API calls to return ordered lists of age-specific activities based on user scores',

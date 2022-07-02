@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import React from 'react';
 import TopLayer from './TopLayer';
 import PortfolioBackground from '../images/Portfolio-background.png'
@@ -7,6 +7,11 @@ import PortfolioMetal from '../images/Portfolio-toplevel-metal.png'
 
 
 function About(props) {
+
+	const firstUpdate = useRef(true)
+  const secondUpdate = useRef(true)
+	const thirdUpdate = useRef(true)
+  const fourthUpdate = useRef(true)
 
 	// const greetings = ['Hi! I am', 'Ciao! Io sono', 'Hola! Yo soy', 'Bonjour! Je\'taime']
 	const aboutTraits = [
@@ -18,9 +23,13 @@ function About(props) {
 	// const [currentGreetingIndex, setCurrentGreetingIndex] = useState(0)
 	const [currentTrait, setCurrentTrait] = useState(aboutTraits[0])
 	const [currentTraitIndex, setCurrentTraitIndex] = useState(0)
-	const [toggleLayer, setToggleLayer] = useState(true)
-	const [showLayer, setShowLayer] = useState(true)
+	const [fadeInClass, setFadeInClass] = useState(true)
+	const [showTopLayer, setShowTopLayer] = useState(false)
 	const [rerenderImage, setRerenderImage] = useState(false)
+	const [triggerSecondEffect, setTriggerSecondEffect] = useState(false)
+	const [triggerThirdEffect, setTriggerThirdEffect] = useState(false)
+	const [triggerFourthEffect, setTriggerFourthEffect] = useState(false)
+	const [resetLoop, setResetLoop] = useState(false)
 
 	const parentDiv = {
 		position: 'relative',
@@ -41,6 +50,65 @@ function About(props) {
 		width: '100%'
 	}
 
+	useEffect (() => {
+		const showTimeout = setTimeout(() => {
+			setShowTopLayer(true)
+			setTriggerSecondEffect(!triggerSecondEffect)
+		}, 1000)
+		return () => clearTimeout(showTimeout)
+	} , [resetLoop] )
+
+
+	useEffect (() => {
+		if (firstUpdate.current) {
+      firstUpdate.current = false;
+      return;
+		}
+		const secondTimeout = setTimeout(() => {
+			setShowTopLayer(false)
+			setFadeInClass(false)
+			setTriggerThirdEffect(!triggerThirdEffect)
+		}, 4000)
+		return () => clearTimeout(secondTimeout)
+	} , [triggerSecondEffect] )
+	
+	
+		useEffect (() => {
+			if (secondUpdate.current) {
+				secondUpdate.current = false;
+				return;
+			}
+			setShowTopLayer(true)
+			if (currentTraitIndex < aboutTraits.length-1) {
+				// setCurrentTrait(aboutTraits[currentTraitIndex])    
+				setCurrentTraitIndex(currentTraitIndex + 1)
+				// setRerenderImage(!rerenderImage)
+			} else { 
+				setCurrentTrait(aboutTraits[0])
+				// setCurrentTraitIndex(1)
+				// setRerenderImage(!rerenderImage)
+			}
+			const thirdTimeout = setTimeout(() => {
+				setTriggerFourthEffect(!triggerFourthEffect)
+			}, 400)
+			return () => clearTimeout(thirdTimeout)
+		}, [triggerThirdEffect] )
+
+
+	useEffect (() => {
+		if (thirdUpdate.current) {
+      thirdUpdate.current = false;
+      return;
+    }
+		setFadeInClass(true)
+		setCurrentTrait(aboutTraits[currentTraitIndex])    
+	
+		setResetLoop(!resetLoop)
+	}, [triggerFourthEffect] )
+
+
+
+
 	// useEffect(() => {
   //   const interval = setInterval(() => {
 	// 		if (currentGreetingIndex < greetings.length) {
@@ -54,30 +122,30 @@ function About(props) {
   //   return () => clearInterval(interval);
   // }, [currentGreetingIndex]);
 
-	useEffect(() => {
-		// setShowLayer(false)
-		setToggleLayer(false)
-    const photoInterval = setInterval(() => {
-			if (currentTraitIndex < aboutTraits.length) {
-      	setCurrentTrait(aboutTraits[currentTraitIndex])    
-				setCurrentTraitIndex(currentTraitIndex + 1)
-				setRerenderImage(!rerenderImage)
-			} else { 
-				setCurrentTrait(aboutTraits[0])
-				setCurrentTraitIndex(1)
-				setRerenderImage(!rerenderImage)
-			}
-    }, 4000);
+	// useEffect(() => {
+	// 	// setShowLayer(false)
+	// 	setToggleLayer(false)
+  //   const photoInterval = setInterval(() => {
+	// 		if (currentTraitIndex < aboutTraits.length) {
+  //     	setCurrentTrait(aboutTraits[currentTraitIndex])    
+	// 			setCurrentTraitIndex(currentTraitIndex + 1)
+	// 			setRerenderImage(!rerenderImage)
+	// 		} else { 
+	// 			setCurrentTrait(aboutTraits[0])
+	// 			setCurrentTraitIndex(1)
+	// 			setRerenderImage(!rerenderImage)
+	// 		}
+  //   }, 4000);
 		
-    return () => clearInterval(photoInterval);
-  }, [currentTraitIndex]);
+  //   return () => clearInterval(photoInterval);
+  // }, [currentTraitIndex]);
 
-	useEffect (() => {
-		setShowLayer(true)
-		setToggleLayer(true)
-		const timer = setTimeout(() => setToggleLayer(false), 3500);
-    return () => clearTimeout(timer);
-	}, [rerenderImage] )
+	// useEffect (() => {
+	// 	setShowLayer(true)
+	// 	setToggleLayer(true)
+	// 	const timer = setTimeout(() => setToggleLayer(false), 3500);
+  //   return () => clearTimeout(timer);
+	// }, [rerenderImage] )
 	
 
 
@@ -97,7 +165,7 @@ function About(props) {
 				</div>
 				<div className='about-right' style={parentDiv}>
 					<img style={bottomLayer} src={PortfolioBackground} />
-					{toggleLayer ? <TopLayer topLayer={topLayer} showLayer={showLayer} currentTrait={currentTrait}/> : null }
+					{showTopLayer ? <TopLayer topLayer={topLayer} fadeInClass={fadeInClass} currentTrait={currentTrait}/> : null }
 				</div>
 				{/* <div class="parent">
 				<img class="image1" src="/uploads/media/default/0001/01/25acddb3da54207bc6beb5838f65f022feaa81d7.jpeg" />

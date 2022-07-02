@@ -71,13 +71,13 @@
 }
 
 
-.image-top-layer-show {
+.image-top-layer-enter {
 	animation-duration: 0.5s;
 	animation-name: animate-pop;
 	animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
 }
 
-.image-top-layer-hide {
+.image-top-layer-exit {
 	animation-duration: 0.5s;
 	animation-name: animate-unpop;
 	animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
@@ -85,23 +85,21 @@
 
 @keyframes animate-pop {
 	0% {
-		transform: translate(0px, 0px);
+		transform: translate(1200px, 0px);
 	}
 
 	100% {
-		transform: translate(-1000px, 0px);
+		transform: translate(0px, 0px);
 	}
 }
 
 @keyframes animate-unpop {
 	
-	100% {
-		opacity: 1;
-		transform: scale(1, 1);
-	}
 	0% {
-		opacity: 0;
-		transform: scale(0, 0);
+		transform: translate(0px, 0px);
+	}
+	100% {
+		transform: translate(-1200px, 0px);
 	}
 }
 

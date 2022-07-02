@@ -1,9 +1,9 @@
 import React from 'react';
 
-function TopLayer({topLayer, showLayer, currentTrait}) {
+function TopLayer({topLayer, fadeInClass, currentTrait}) {
 	return (
 		<div>
-			<img className={showLayer ? 'image-top-layer-show': 'image-top-layer-hide'} style={topLayer} src={currentTrait.image} />
+			<img className={fadeInClass ? 'image-top-layer-enter': 'image-top-layer-exit'} style={topLayer} src={currentTrait.image} />
 		</div>
 	);
 }
