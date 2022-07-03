@@ -2,6 +2,9 @@ import TimesTablesHome from '../images/Times-tables-master-home.png'
 import KidsOutHome from '../images/Take-the-kids-out-home.png'
 import WorldQuizHome from '../images/World-quiz-world-home.png'
 import CurateifyHome from '../images/Curate-ify-home.png'
+import CurateifyLogo from '../images/curate-ify-logo.png'
+import WQWLogo from '../images/world-quiz-world-logo.png'
+
 
 export const blogPosts = [
 	{
@@ -58,6 +61,8 @@ export const allProjects = [
 		gitHubLink: 'https://github.com/ctninman/curate-ify',
 		slogan: 'Spotify Re-imagined for Album Collectors',
 		description: '',
+		logo: CurateifyLogo,
+		youtubeEmbedID: 'sQUqpPwevWI',
 		thumbnail: CurateifyHome,
 		features: [
 
@@ -78,6 +83,8 @@ export const allProjects = [
 		gitHubLink: 'https://github.com/ctninman/Phase_2_React_Project',
 		slogan: '',
 		description: '',
+		logo: WQWLogo,
+		youtubeEmbedID: 'zqCPJJaqVRo',
 		thumbnail: WorldQuizHome,
 		features: [
 
@@ -97,6 +104,8 @@ export const allProjects = [
 		gitHubLink: 'https://github.com/ctninman/times-tables-master-project',
 		slogan: 'Methodically Master Multiplication',
 		description: '',
+		logo: '',
+		youtubeEmbedID: '',
 		thumbnail: TimesTablesHome,
 		features: [
 
@@ -117,6 +126,8 @@ export const allProjects = [
 		gitHubLink: 'https://github.com/ctninman/Take-The-Kids-Out-Phase3-Project',
 		slogan: '',
 		description: '',
+		logo: '',
+		youtubeEmbedID: '',
 		thumbnail: KidsOutHome,
 		features: [
 

@@ -4,6 +4,8 @@ import TopLayer from './TopLayer';
 import PortfolioBackground from '../images/Portfolio-background.png'
 import PortfolioEducation from '../images/Portfolio-toplevel-education.png'
 import PortfolioMetal from '../images/Portfolio-toplevel-metal.png'
+import PortfolioVolleyball from '../images/Portfolio-toplevel-volleyball.png'
+import PortfolioMusic from '../images/Portfolio-toplevel-music.png'
 
 
 function About(props) {
@@ -16,7 +18,9 @@ function About(props) {
 	// const greetings = ['Hi! I am', 'Ciao! Io sono', 'Hola! Yo soy', 'Bonjour! Je\'taime']
 	const aboutTraits = [
 		{description: 'creative educator', image: PortfolioEducation}, 
-		{description: 'heavy-metal guitarist', image: PortfolioMetal}
+		{description: 'heavy-metal guitarist', image: PortfolioMetal},
+		{description: 'volleyball player', image: PortfolioVolleyball},
+		{description: 'music aficionado', image: PortfolioMusic}
 	]
 
 	// const [currentGreeting, setCurrentGreeting] = useState(greetings[0])
@@ -84,7 +88,7 @@ function About(props) {
 				setCurrentTraitIndex(currentTraitIndex + 1)
 				// setRerenderImage(!rerenderImage)
 			} else { 
-				setCurrentTrait(aboutTraits[0])
+				setCurrentTraitIndex(0)
 				// setCurrentTraitIndex(1)
 				// setRerenderImage(!rerenderImage)
 			}
