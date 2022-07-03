@@ -4,31 +4,31 @@ function NavBar(props) {
 	return (
 		<div className='comp-navbar'>
 			<div>
-				<h3>About</h3>
+				<h3>ABOUT</h3>
 			</div>
 			<div>
 				<h3>|</h3>
 			</div>
 			<div>
-				<h3>Projects</h3>
+				<h3>PROJECTS</h3>
 			</div>
 			<div>
 				<h3>|</h3>
 			</div>
 			<div>
-				<h3>Blog</h3>
+				<h3>BLOG</h3>
 			</div>
 			<div>
 				<h3>|</h3>
 			</div>
 			<div>
-				<h3>Skills</h3>
+				<h3>SKILLS</h3>
 			</div>
 			<div>
 				<h3>|</h3>
 			</div>
 			<div>
-				<h3>Contact</h3>
+				<h3>CONTACT</h3>
 			</div>
 		</div>
 	);

@@ -4,7 +4,7 @@ import BlogPost from './BlogPost'
 
 function Blog(props) {
 	return (
-		<div style={{backgroundColor: 'green'}}>
+		<div className='comp-blogs'>
 			<h1>All My Blog Posts</h1>
 			{blogPosts.map (post => (
 				<BlogPost 

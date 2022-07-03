@@ -4,19 +4,19 @@ function Sidebar(props) {
 	return (
 		<div className='comp-sidebar'>
 			<div>
-				<h1>About</h1>
+				<h1>ABOUT</h1>
 			</div>
 			<div>
-				<h1>Projects</h1>
+				<h1>PROJECTS</h1>
 			</div>
 			<div>
-				<h1>Blog</h1>
+				<h1>BLOG</h1>
 			</div>
 			<div>
-				<h1>Skills</h1>
+				<h1>SKILLS</h1>
 			</div>
 			<div>
-				<h1>Contact</h1>
+				<h1>CONTACT</h1>
 			</div>
 		</div>
 	);
