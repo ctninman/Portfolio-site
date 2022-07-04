@@ -7,13 +7,15 @@ function Skills(props) {
 		<>
 		<h1>Skills</h1>
 		<div className='comp-skills'>
-			
-			{allSkills.map(skill => (
-				<SingleSkill 
-					key={skill.skill}
-					skill={skill}
-				/>
-			))}
+			{/* <div> */}
+				{/* <h1></h1> */}
+				{allSkills.map(skill => (
+					<SingleSkill 
+						key={skill.skill}
+						skill={skill}
+					/>
+				))}
+			{/* </div> */}
 		</div>
 		</>
 	);

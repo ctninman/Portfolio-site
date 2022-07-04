@@ -14,11 +14,17 @@ function BlogPost({post}) {
 
 	return (
 		<div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className='blog-post'>
-			<div>
-				<img style={{width: '150px'}} src={post.image} />
-				<h1>{post.title}</h1>
-			</div>
-			{blogHover ? <p>{post.introParagraph}</p> : null }
+			{!blogHover 
+					? 
+				<div className='blog-flip'>
+					<img style={{width: '150px'}} src={post.image} />
+					<h1>{post.title}</h1>
+				</div>
+					:
+				<div className='blog-flip'>
+					<p>{post.introParagraph}</p>
+				</div>
+			}
 		</div>
 	);
 }

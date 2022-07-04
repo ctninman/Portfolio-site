@@ -4,6 +4,8 @@ import WorldQuizHome from '../images/World-quiz-world-home.png'
 import CurateifyHome from '../images/Curate-ify-home.png'
 import CurateifyLogo from '../images/curate-ify-logo.png'
 import WQWLogo from '../images/world-quiz-world-logo.png'
+import TimesLogo from '../images/times-tables-master-logo.png'
+import KidsLogo from '../images/take-the-kids-out-logo.png'
 
 
 export const blogPosts = [
@@ -81,7 +83,7 @@ export const allProjects = [
 		youTubeLink: true,
 		deployedSite: 'https://world-quiz-world.herokuapp.com/',
 		gitHubLink: 'https://github.com/ctninman/Phase_2_React_Project',
-		slogan: '',
+		slogan: 'How Much Do You Know?',
 		description: '',
 		logo: WQWLogo,
 		youtubeEmbedID: 'zqCPJJaqVRo',
@@ -104,8 +106,8 @@ export const allProjects = [
 		gitHubLink: 'https://github.com/ctninman/times-tables-master-project',
 		slogan: 'Methodically Master Multiplication',
 		description: '',
-		logo: '',
-		youtubeEmbedID: '',
+		logo: TimesLogo,
+		youtubeEmbedID: 'Ac8E3qzQRTk',
 		thumbnail: TimesTablesHome,
 		features: [
 
@@ -124,10 +126,10 @@ export const allProjects = [
 		youTubeLink: false,
 		deployedSite: 'https://times-tables-master.herokuapp.com/',
 		gitHubLink: 'https://github.com/ctninman/Take-The-Kids-Out-Phase3-Project',
-		slogan: '',
+		slogan: 'Find Fun For The Kids (AND YOU TOO!)',
 		description: '',
-		logo: '',
-		youtubeEmbedID: '',
+		logo: KidsLogo,
+		youtubeEmbedID: 'bYCB_OYvqko',
 		thumbnail: KidsOutHome,
 		features: [
 
@@ -145,66 +147,82 @@ export const allProjects = [
 export const allSkills = [
 	{
 		skill: 'React',
-		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
+		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+		height: 50
 	},
 	{
 		skill: 'RubyOnRails',
-		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-original-wordmark.svg'
+		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-original-wordmark.svg',
+		height: 50
 	},
 	{
 		skill: 'HTML5',
-		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg'
+		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
+		height: 50
 	},
 	{
 		skill: 'CSS3',
-		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg'
+		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
+		height: 50
 	},
 	{
 		skill: 'JavaScript',
-		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'
+		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
+		height: 50
 	},
 	{
 		skill: 'Canva',
-		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg'
+		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg',
+		height: 50
 	},
 	{
 		skill: 'BootStrap',
-		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg'
+		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg',
+		height: 50
 	},
 	{
 		skill: 'Figma',
-		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg'
+		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg',
+		height: 50
 	},
 	{
 		skill: 'Gatsby',
-		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gatsby/gatsby-plain.svg'
+		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gatsby/gatsby-plain.svg',
+		height: 50
 	},
 	{
 		skill: 'Github',
-		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg'
+		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg',
+		height: 50
 	},
 	{
 		skill: 'Heroku',
-		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original.svg'
+		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original.svg',
+		height: 50
 	},
 	{
 		skill: 'NodeJS',
-		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg'
+		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
+		height: 50
 	},
 	{
 		skill: 'PostgreSQL',
-		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg'
+		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg',
+		height: 50
 	},
 	{
 		skill: 'Rails',
-		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg'
+		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg',
+		height: 50
 	},
 	{
 		skill: 'SQLite',
-		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg'
+		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg',
+		height: 50
 	},
 	{
 		skill: 'VSCode',
-		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg'
+		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg',
+		height: 50
 	},
 ]

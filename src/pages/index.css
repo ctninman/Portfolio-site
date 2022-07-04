@@ -25,6 +25,14 @@ body {
 	width: 70%;
 }
 
+.blog-flip {
+	height: 95px;
+}
+
+.blog-flip p {
+	margin-top: 5px;
+}
+
 .blog-post {
 	background-color: white;
 	margin-left: 20px;
@@ -32,6 +40,8 @@ body {
 	margin-top: 20px;
 	margin-bottom: 20px;
 	border-radius: 5px;
+	height: 95px;
+	overflow: scroll;
 	cursor: pointer;
 	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
@@ -53,6 +63,11 @@ body {
 	margin-left: 10px;
 	margin-right: 10px;
 	text-indent: 25px;
+}
+
+.blog-post:hover {
+	border: 2px solid red;
+	box-sizing: border-box;
 }
 
 .comp-about {
@@ -138,15 +153,22 @@ body {
 }
 
 .comp-single-skill {
-	width: 60px;
-	margin-right: 10px;
-	margin-left: 10px;
-	
-	height: auto;
+	width: 75px;
+	height: 75px;
+	background-color: white;
+	/* padding: 20%; */
+	justify-content: center;
+	border-radius: 50%;
+	margin: 20px;
+	margin-bottom: 40px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+	/* height: auto; */
 }
 
 .comp-single-skill img {
-	width: 100%;
+	width: 50px;
+	height: 50px;
+	padding: 12.5px;
 }
 
 .comp-single-skill h3 {
@@ -159,8 +181,8 @@ body {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: flex-end;
-	width: 90%;
+	justify-content: flex-start;
+	width: 100%;
 }
 
 .image-top-layer-enter {
@@ -211,7 +233,6 @@ body {
 .project-logo {
 	height: 100px;
 	margin: 10px;
-
 }
 
 .project-thumb {

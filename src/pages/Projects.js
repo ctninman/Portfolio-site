@@ -15,6 +15,7 @@ function Projects() {
 					<SingleProjectThumb 
 						key={project.appName} 
 						project={project}
+						setDisplayedProject={setDisplayedProject}
 					/>
 				))}
 			</div>
