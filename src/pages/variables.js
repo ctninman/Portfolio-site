@@ -148,12 +148,12 @@ export const allSkills = [
 	{
 		skill: 'React',
 		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
-		height: 50
+		height: 70
 	},
 	{
 		skill: 'RubyOnRails',
 		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-original-wordmark.svg',
-		height: 50
+		height: 60
 	},
 	{
 		skill: 'HTML5',
@@ -163,7 +163,7 @@ export const allSkills = [
 	{
 		skill: 'CSS3',
 		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
-		height: 50
+		height: 80
 	},
 	{
 		skill: 'JavaScript',
