@@ -5,7 +5,7 @@ import BlogPost from './BlogPost'
 function Blog(props) {
 	return (
 		<div className='comp-blogs'>
-			<h1>All My Blog Posts</h1>
+			<h1>BLOG POSTS</h1>
 			{blogPosts.map (post => (
 				<BlogPost 
 					key={post.title}

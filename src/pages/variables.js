@@ -148,32 +148,32 @@ export const allSkills = [
 	{
 		skill: 'React',
 		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
-		height: 70
+		height: 90
 	},
 	{
 		skill: 'RubyOnRails',
 		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-original-wordmark.svg',
-		height: 60
+		height: 80
 	},
 	{
 		skill: 'HTML5',
 		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
-		height: 50
+		height: 80
 	},
 	{
 		skill: 'CSS3',
 		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
-		height: 80
+		height: 90
 	},
 	{
 		skill: 'JavaScript',
 		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
-		height: 50
+		height: 80
 	},
 	{
 		skill: 'Canva',
 		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg',
-		height: 50
+		height: 70
 	},
 	{
 		skill: 'BootStrap',
@@ -183,7 +183,7 @@ export const allSkills = [
 	{
 		skill: 'Figma',
 		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg',
-		height: 50
+		height: 70
 	},
 	{
 		skill: 'Gatsby',
@@ -198,7 +198,7 @@ export const allSkills = [
 	{
 		skill: 'Heroku',
 		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original.svg',
-		height: 50
+		height: 60
 	},
 	{
 		skill: 'NodeJS',
@@ -208,21 +208,21 @@ export const allSkills = [
 	{
 		skill: 'PostgreSQL',
 		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg',
-		height: 50
+		height: 60
 	},
 	{
-		skill: 'Rails',
+		skill: 'Ruby',
 		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg',
-		height: 50
+		height: 80
 	},
 	{
 		skill: 'SQLite',
 		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg',
-		height: 50
+		height: 60
 	},
 	{
 		skill: 'VSCode',
 		skillSVG: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg',
-		height: 50
+		height: 80
 	},
 ]

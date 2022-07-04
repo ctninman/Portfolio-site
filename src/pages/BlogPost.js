@@ -16,7 +16,7 @@ function BlogPost({post}) {
 		<div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className='blog-post'>
 			{!blogHover 
 					? 
-				<div className='blog-flip'>
+				<div className='blog-thumb'>
 					<img style={{width: '150px'}} src={post.image} />
 					<h1>{post.title}</h1>
 				</div>

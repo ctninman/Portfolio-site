@@ -3,9 +3,16 @@ import SingleSkill from './SingleSkill.js';
 import { allSkills } from './variables.js'
 
 function Skills(props) {
+
+	const skillsH1 = {
+		backgroundColor: '#D295BF',
+		marginBottom: '0px',
+		marginTop: '0px',
+		paddingLeft: '20px'
+	}
 	return (
 		<>
-		<h1>Skills</h1>
+		<h1 style={skillsH1}>SKILLS</h1>
 		<div className='comp-skills'>
 			{/* <div> */}
 				{/* <h1></h1> */}
