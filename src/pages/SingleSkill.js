@@ -2,8 +2,8 @@ import React from 'react';
 
 function SingleSkill({skill}) {
 
-	const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
-	const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
+	const vw = Math.max((document.documentElement.clientWidth || 0, window.innerWidth || 0) *.8)
+	const vh = Math.max((document.documentElement.clientHeight || 0, window.innerHeight || 0) *.8)
 
 	const skillAnimationClasses = ['sk1', 'sk2', 'sk3', 'sk4', 'sk5']
 	const randomClassName = skillAnimationClasses[Math.floor(Math.random()* skillAnimationClasses.length)] 
@@ -41,7 +41,7 @@ function SingleSkill({skill}) {
 	return (
 		<div className={skillClassName} style={skillStyle}>
 			<img src={skill.skillSVG} alt={skill.skill} style={skillImageStyle} />
-			<h3>{skill.skill}</h3>
+			<h3 style={{width: '100%', textAlign: 'center', display: 'inline'}}>{skill.skill}</h3>
 		</div>
 	);
 }

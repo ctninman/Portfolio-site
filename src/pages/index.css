@@ -48,7 +48,7 @@ body {
 	margin-bottom: 20px;
 	border-radius: 5px;
 	height: 95px;
-	/* overflow: scroll; */
+	overflow: scroll;
 	cursor: pointer;
 	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
@@ -70,6 +70,10 @@ body {
 	margin-left: 10px;
 	margin-right: 10px;
 	text-indent: 25px;
+}
+
+.blog-thumb {
+	overflow: hidden;
 }
 
 /* .blog-post:hover {
@@ -174,27 +178,27 @@ transform: scale(1.03,1.03);
 
 
 .sk1 {
-	offset-path: path('M20,20 C20,100 200,0 200,100');
+	offset-path: path('M70,0 A70,70 0 1,1 70,140 A70,70 0 1,1 70,0');
 	animation: move 4000ms infinite alternate ease-in-out;
 }
 
 .sk2 {
-	offset-path: path('M20,20 C20,100 200,0 200,100');
+	offset-path: path('M70,0 A70,70 0 1,1 70,140 A70,70 0 1,1 70,0');
 	animation: move 5000ms infinite alternate ease-in-out;
 }
 
 .sk3 {
-	offset-path: path('M20,20 C20,100 200,0 200,100');
+	offset-path: path('M70,0 A70,70 0 1,1 70,140 A70,70 0 1,1 70,0');
 	animation: move 6000ms infinite alternate ease-in-out;
 }
 
 .sk4 {
-	offset-path: path('M20,20 C20,100 200,0 200,100');
+	offset-path: path('M70,0 A70,70 0 1,1 70,140 A70,70 0 1,1 70,0');
 	animation: move 7000ms infinite alternate ease-in-out;
 }
 
 .sk5 {
-	offset-path: path('M20,20 C20,100 200,0 200,100');
+	offset-path: path('M70,0 A70,70 0 1,1 70,140 A70,70 0 1,1 70,0');
 	animation: move 8000ms infinite alternate ease-in-out;
 }
 
@@ -212,17 +216,21 @@ transform: scale(1.03,1.03);
 	width: 50px;
 	height: 50px;
 	padding: 12.5px;
+	margin-bottom: -15px;
 }
 
 .comp-single-skill h3 {
 	font-size: 10px;
 	text-align: center;
-	margin-top: -5px;
+	margin-top: -25px;
 	background-color: white;
 	border-radius: 5px;
 	width: fit-content;
 	padding-left: 5px;
 	padding-right: 5px;
+	width: 100%;  
+	display: inline;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 .comp-skills {
@@ -233,7 +241,7 @@ transform: scale(1.03,1.03);
 	/* justify-content: flex-start; */
 	width: 100%;
 	/* margin-left: 10%; */
-	height: 95vh;
+	height: 85vh;
 	position: relative;
 }
 

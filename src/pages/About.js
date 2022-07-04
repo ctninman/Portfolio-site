@@ -94,7 +94,7 @@ function About(props) {
 			}
 			const thirdTimeout = setTimeout(() => {
 				setTriggerFourthEffect(!triggerFourthEffect)
-			}, 400)
+			}, 350)
 			return () => clearTimeout(thirdTimeout)
 		}, [triggerThirdEffect] )
 

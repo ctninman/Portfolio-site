@@ -1,6 +1,13 @@
-import React from 'react';
+import React, { useRef } from 'react';
 
-function NavBar(props) {
+function NavBar({aboutRef, projectRef, blogRef}) {
+
+	// const handleScroll = (ref) {
+	// 	blogRef.current.scrollIntoView({ behavior: 'smooth' })
+	// }
+
+	const scrollToElement = () => blogRef.current.scrollIntoView();
+
 	return (
 		<div className='comp-navbar'>
 			<div>
@@ -15,7 +22,7 @@ function NavBar(props) {
 			<div>
 				<h3>|</h3>
 			</div>
-			<div>
+			<div onClick={scrollToElement}>
 				<h3>BLOG</h3>
 			</div>
 			<div>
