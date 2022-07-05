@@ -5,6 +5,8 @@ import SingleProjectThumb from './SingleProjectThumb';
 
 function Projects({projectRef}) {
 
+	
+
 	const [displayedProject, setDisplayedProject] = useState(allProjects[0])
 	const [selectedView, setSelectedView] = useState('story')
 
