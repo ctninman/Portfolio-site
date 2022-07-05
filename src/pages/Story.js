@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Story(props) {
+function Story({project}) {
 	return (
 		<div>
-			<h1>Story</h1>
+			<p>{project.story}</p>
 		</div>
 	);
 }

@@ -1,11 +1,16 @@
 import React from 'react';
 
-function Tools(props) {
+function Tools({project}) {
 	return (
 		<div>
-			<h1>Tools</h1>
+			<h2>GOAL: {project.goal}</h2>
+			<ul>
+				{project.techPoints.map(point => (
+					<li key={point}>{point}</li>
+				))}
+			</ul>
 		</div>
 	);
 }
 
-export default Tools;<h1>Tools</h1>
+export default Tools;

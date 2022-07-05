@@ -17,10 +17,10 @@ function About(props) {
 
 	// const greetings = ['Hi! I am', 'Ciao! Io sono', 'Hola! Yo soy', 'Bonjour! Je\'taime']
 	const aboutTraits = [
-		{description: 'creative educator', image: PortfolioEducation, paragraph: 'I am amazing.'}, 
-		{description: 'heavy-metal guitarist', image: PortfolioMetal, paragraph: 'I am so cool.'},
-		{description: 'volleyball player', image: PortfolioVolleyball, paragraph: 'What a man!'},
-		{description: 'music aficionado', image: PortfolioMusic, paragraph: 'Lean, mean, bean machine'}
+		{description: 'diverse degree holder', image: PortfolioEducation, paragraph: 'My college career began with 6 hours a day of classical guitar practice. An acquaintance asked me at my senior recital if I wanted to teach with her, and I spent the next 10 years teaching in a preschool classroom, and mannying in NYC. I returned to get my master\'s in education, and taught until teaching during the pandemic showed me how much I loved to create educational tech tools for my students to learn.'}, 
+		{description: 'heavy-metal guitarist', image: PortfolioMetal, paragraph: 'A purchase of an Ozzfest live VHS tape was my gateway into the world of heavy metal, and the beginning of my love of music. My best friends in high school and I played thrash and melodic death metal at our small private school. I went through a phase where I thought I shouldn\'t listen to metal because I was grown-up. I now realized the error in my thinking, and am hoping to get loud again once we move out of our 1-bedroom in Brooklyn.'},
+		{description: 'volleyball player', image: PortfolioVolleyball, paragraph: 'I often get asked where I met my wife. The answer is, of course, at the Dodge YMCA playing volleyball. And we\'re actually one of six couples that got married through playing together at the YMCA. We still love playing, but most of the time is now at the park, where our 5 year-old volleyball obsessed son can play as well.'},
+		{description: 'music aficionado', image: PortfolioMusic, paragraph: 'I am learning to be as minimalist as I can, but there is one area where I am not interested. That\'s my collection vinyl records. In my free time I am searching RateYourMusic for the best albums of each year and giving them a spin. My final project at the Flatiron School was building a version of Spotify for album collectors. Check it out in my projects below.'}
 	]
 
 	// const [currentGreeting, setCurrentGreeting] = useState(greetings[0])

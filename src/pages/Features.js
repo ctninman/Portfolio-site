@@ -1,9 +1,13 @@
 import React from 'react';
 
-function Features(props) {
+function Features({project}) {
 	return (
 		<div>
-			<h1>Features</h1>
+			<ul>
+				{project.features.map(feature => (
+					<li key={feature}>{feature}</li>
+				))}
+			</ul>
 		</div>
 	);
 }
