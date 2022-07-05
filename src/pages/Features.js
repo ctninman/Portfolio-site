@@ -4,9 +4,10 @@ function Features({displayedProject}) {
 	return (
 		<div>
 			<ul>
-				{displayedProject.features.map(feature => (
+				{/* {displayedProject.features.map(feature => (
 					<li key={feature}>{feature}</li>
-				))}
+				))} */}
+				test
 			</ul>
 		</div>
 	);
