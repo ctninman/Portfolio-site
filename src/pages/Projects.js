@@ -36,11 +36,15 @@ function Projects({projectRef}) {
 					/>
 				))}
 			</div>
-			<SingleProject 
-				displayedProject={displayedProject}
-				selectedView={selectedView}
-				setSelectedView={setSelectedView}
-			/>
+			{displayedProject ?
+				<SingleProject 
+					displayedProject={displayedProject}
+					selectedView={selectedView}
+					setSelectedView={setSelectedView}
+				/>
+				:
+				null
+			}
 		</div>
 	) 
 	: null
