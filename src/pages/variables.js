@@ -3,7 +3,7 @@ import React from 'react';
 function variables(props) {
 	return (
 		<div>
-			
+			<h1>something</h1>
 		</div>
 	);
 }
