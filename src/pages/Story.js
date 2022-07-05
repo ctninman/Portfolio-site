@@ -3,8 +3,8 @@ import React from 'react';
 function Story({displayedProject}) {
 	return (
 		<div>
-			{displayedProject.description.map(description => (
-				<p>{description}</p>
+			{displayedProject.description.map(parag => (
+				<p>{parag}</p>
 			))}
 		</div>
 	);

@@ -10,31 +10,31 @@ function NavBar({aboutRef, projectRef, blogRef, skillRef, contactRef}) {
 
 	return (
 		<div className='comp-navbar'>
-			<div onClick={() => aboutRef.current.scrollIntoView()}>
+			<div onClick={() => aboutRef.current.scrollIntoView({behavior: "smooth"})}>
 				<h2>ABOUT</h2>
 			</div>
 			<div>
 				<h3>|</h3>
 			</div>
-			<div onClick={() => projectRef.current.scrollIntoView()}>
+			<div onClick={() => projectRef.current.scrollIntoView({behavior: "smooth"})}>
 				<h2>PROJECTS</h2>
 			</div>
 			<div>
 				<h3>|</h3>
 			</div>
-			<div onClick={() => blogRef.current.scrollIntoView()}>
+			<div onClick={() => blogRef.current.scrollIntoView({behavior: "smooth"})}>
 				<h2>BLOG</h2>
 			</div>
 			<div>
 				<h3>|</h3>
 			</div>
-			<div onClick={() => skillRef.current.scrollIntoView()}>
+			<div onClick={() => skillRef.current.scrollIntoView({behavior: "smooth"})}>
 				<h2>SKILLS</h2>
 			</div>
 			<div>
 				<h3>|</h3>
 			</div>
-			<div onClick={() => contactRef.current.scrollIntoView()}>
+			<div onClick={() => contactRef.current.scrollIntoView({behavior: "smooth"})}>
 				<h2>CONTACT</h2>
 			</div>
 		</div>
