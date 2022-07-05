@@ -3,9 +3,10 @@ import { allProjects } from './variables';
 import SingleProject from './SingleProject';
 import SingleProjectThumb from './SingleProjectThumb';
 
-function Projects() {
+function Projects({projectRef}) {
 
 	const [displayedProject, setDisplayedProject] = useState(allProjects[0])
+	const [selectedView, setSelectedView] = useState('story')
 
 	const projectDiv = {
 		backgroundColor: '#D295BF'
@@ -18,7 +19,7 @@ function Projects() {
 	}
 
 	return (
-		<div style={projectDiv}>
+		<div ref={projectRef} style={projectDiv}>
 			<h1 style={projecth1}>MY PROJECTS</h1>
 			<div className='comp-projects'>
 				{allProjects.map(project => (
@@ -27,10 +28,16 @@ function Projects() {
 						project={project}
 						displayedProject={displayedProject}
 						setDisplayedProject={setDisplayedProject}
+						selectedView={selectedView}
+						setSelectedView={setSelectedView}
 					/>
 				))}
 			</div>
-			<SingleProject project={displayedProject}/>
+			<SingleProject 
+				project={displayedProject}
+				selectedView={selectedView}
+				setSelectedView={setSelectedView}
+			/>
 		</div>
 	);
 }

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function SingleProjectThumb({project, setDisplayedProject, displayedProject}) {
+function SingleProjectThumb({project, setDisplayedProject, displayedProject, setSelectedView}) {
 
 	const activeProjectStyle = {
 		border: '5px solid #7E52A0',
@@ -8,6 +8,7 @@ function SingleProjectThumb({project, setDisplayedProject, displayedProject}) {
 	}
 	
 	function handleProjectSelect () {
+		setSelectedView('story')
 		setDisplayedProject(project)
 	}
 	

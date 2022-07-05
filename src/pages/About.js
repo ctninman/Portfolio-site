@@ -8,7 +8,7 @@ import PortfolioVolleyball from '../images/Portfolio-toplevel-volleyball.png'
 import PortfolioMusic from '../images/Portfolio-toplevel-music.png'
 
 
-function About(props) {
+function About({aboutRef}) {
 
 	const firstUpdate = useRef(true)
   const secondUpdate = useRef(true)
@@ -190,7 +190,7 @@ function About(props) {
 
 	return (
 		<div>
-			<div className='comp-about'>
+			<div ref={aboutRef} className='comp-about'>
 				<div className='about-left'>
 					{/* <h2>{currentGreeting}</h2> */}
 					<h2>Hello. I am</h2>

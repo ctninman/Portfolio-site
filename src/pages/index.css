@@ -128,10 +128,18 @@ transform: scale(1.03,1.03);
 	margin-right: 8px;
 }
 
+.comp-navbar h2 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 20px;
+	cursor: pointer;
+}
+
 .comp-navbar h3 {
 	margin-top: 10px;
 	margin-bottom: 10px;
 	font-size: 20px;
+	cursor: default;
 }
 
 .comp-projects {

@@ -2,7 +2,7 @@ import React from 'react';
 import SingleSkill from './SingleSkill.js';
 import { allSkills } from './variables.js'
 
-function Skills(props) {
+function Skills({skillRef}) {
 
 	const skillsH1 = {
 		backgroundColor: '#D295BF',
@@ -11,7 +11,7 @@ function Skills(props) {
 		paddingLeft: '20px'
 	}
 	return (
-		<>
+		<div ref={skillRef}>
 		<h1 style={skillsH1}>SKILLS</h1>
 		<div className='comp-skills'>
 			{/* <div> */}
@@ -24,7 +24,7 @@ function Skills(props) {
 				))}
 			{/* </div> */}
 		</div>
-		</>
+		</div>
 	);
 }
 

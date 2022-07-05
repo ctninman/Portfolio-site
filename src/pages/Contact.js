@@ -1,8 +1,8 @@
 import React from 'react';
 
-function Contact(props) {
+function Contact({contactRef}) {
 	return (
-		<div className='comp-contact'>
+		<div ref={contactRef} className='comp-contact'>
 			<div className='single-contact'>
 				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" /> 
 				<h1><a href='https://www.linkedin.com/in/christopher-ninman/'>linkedin.com/in/christopher-ninman/</a></h1>

@@ -2,9 +2,9 @@ import React from 'react';
 import {blogPosts} from './variables.js'
 import BlogPost from './BlogPost'
 
-function Blog(props) {
+function Blog({blogRef}) {
 	return (
-		<div className='comp-blogs'>
+		<div ref={blogRef} className='comp-blogs'>
 			<h1>BLOG POSTS</h1>
 			{blogPosts.map (post => (
 				<BlogPost 

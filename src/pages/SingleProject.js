@@ -4,9 +4,9 @@ import Features from './Features'
 import Tools from './Tools'
 import Story from './Story';
 
-function SingleProject({project}) {
+function SingleProject({project, selectedView, setSelectedView}) {
 
-	const [selectedView, setSelectedView] = useState('video')
+	// const [selectedView, setSelectedView] = useState('video')
 
 	return (
 		<div className='single-project'>
