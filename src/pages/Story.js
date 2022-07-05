@@ -3,10 +3,9 @@ import React from 'react';
 function Story({displayedProject}) {
 	return (
 		<div>
-			{/* {displayedProject.description.map(parag => (
+			{displayedProject.description.map(parag => (
 				<p>{parag}</p>
-			))} */}
-			<h1>Hi</h1>
+			))}
 		</div>
 	);
 }
