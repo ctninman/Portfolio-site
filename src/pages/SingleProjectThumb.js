@@ -17,8 +17,8 @@ function SingleProjectThumb({project, setDisplayedProject, displayedProject, set
 				className='project-thumb' 
 				onClick={handleProjectSelect}
 				style={project === displayedProject ? activeProjectStyle : null }>
-			<h1>{project.appName}</h1>
-			<img src={project.thumbnail} />
+			{/* <h1>{project.appName}</h1>
+			<img src={project.thumbnail} /> */}
 		</div>
 	);
 }
