@@ -323,6 +323,11 @@ transform: scale(1.03,1.03);
 	height: 100px;
 	margin: 10px;
 }
+.project-main {
+	width: 80%;
+	padding-left: 20px;
+	padding-right: 20px;
+}
 
 .project-sidebar {
 	display: flex;

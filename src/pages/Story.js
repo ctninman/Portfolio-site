@@ -3,7 +3,9 @@ import React from 'react';
 function Story({project}) {
 	return (
 		<div>
-			<p>{project.story}</p>
+			{project.description.map(description => (
+				<p>{description}</p>
+			))}
 		</div>
 	);
 }

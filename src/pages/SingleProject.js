@@ -13,12 +13,12 @@ function SingleProject({project}) {
 			<img className='project-logo' src={project.logo} />
 			<div className='project-details'>
 				<div className='project-sidebar'>
-					<button onClick={() => setSelectedView('video')}>Video</button>
 					<button onClick={() => setSelectedView('story')}>Story</button>
+					<button onClick={() => setSelectedView('video')}>Video</button>
 					<button onClick={() => setSelectedView('features')}>Features</button>
 					<button onClick={() => setSelectedView('tools')}>Tools</button>
 				</div>
-				<div>
+				<div className='project-main'>
 					{selectedView === 'video' ? <YoutubeEmbed embedId={project.youtubeEmbedID} /> : null }
 					{selectedView === 'features' ? <Features project={project}/> : null}
 					{selectedView === 'tools' ? <Tools project={project}/> : null}
