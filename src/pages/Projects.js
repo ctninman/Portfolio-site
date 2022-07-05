@@ -1,11 +1,11 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import { allProjects } from './variables';
 import SingleProject from './SingleProject';
 import SingleProjectThumb from './SingleProjectThumb';
 
 function Projects({projectRef}) {
 
-	const [displayedProject, setDisplayedProject] = useState(allProjects[0])
+	const [displayedProject, setDisplayedProject] = useState(null)
 	const [selectedView, setSelectedView] = useState('story')
 
 	const projectDiv = {
@@ -15,8 +15,11 @@ function Projects({projectRef}) {
 		marginTop: '0px',
 		marginBottom: '0px',
 		paddingLeft: '20px'
-
 	}
+
+	useEffect (() => {
+		setDisplayedProject(allProjects[0])
+	}, [] )
 
 	return allProjects ? (
 		<div ref={projectRef} style={projectDiv}>
