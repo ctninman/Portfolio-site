@@ -195,27 +195,27 @@ transform: scale(1.03,1.03);
 
 
 .sk1 {
-	offset-path: path('M 0 0 C 0.6667 0.3333 1.3333 0.6667 3 0');
+	offset-path: path('M 0 0 C 0.6667 0.3333 2 1 4 0');
 	animation: move 2000ms infinite alternate ease-in-out;
 }
 
 .sk2 {
-	offset-path: path('M 0 0 C 0.6667 0.3333 1.3333 0.6667 3 0');
+	offset-path: path('M 0 0 C 0.6667 0.3333 2 1 4 0');
 	animation: move 2500ms infinite alternate ease-in-out;
 }
 
 .sk3 {
-	offset-path: path('M 0 0 C 0.6667 0.3333 1.3333 0.6667 3 0');
+	offset-path: path('M 0 0 C 0.6667 0.3333 2 1 4 0');
 	animation: move 3000ms infinite alternate ease-in-out;
 }
 
 .sk4 {
-	offset-path: path('M 0 0 C 0.6667 0.3333 1.3333 0.6667 3 0');
+	offset-path: path('M 0 0 C 0.6667 0.3333 2 1 4 0');
 	animation: move 3500ms infinite alternate ease-in-out;
 }
 
 .sk5 {
-	offset-path: path('M 0 0 C 0.6667 0.3333 1.3333 0.6667 3 0');
+	offset-path: path('M 0 0 C 0.6667 0.3333 2 1 4 0');
 	animation: move 4000ms infinite alternate ease-in-out;
 }
 
