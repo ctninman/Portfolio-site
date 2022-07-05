@@ -84,13 +84,21 @@ transform: scale(1.03,1.03);
 	background-color: #7E52A0;
 	color: white;
 	margin-top: 40px;
-	text-align: center;
+	text-align:left;
 	display: flex;
 	flex-direction: row;
 }
 
 .comp-about p {
 	font-size: 18px;
+	font-weight: bold;
+	background-color: white;
+	text-indent: 25px;
+	border-radius: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	color: #7E52A0;
+	padding: 10px;
 }
 
 .comp-blogs {
@@ -171,41 +179,56 @@ transform: scale(1.03,1.03);
 	border-radius: 50%;
 	margin: 20px;
 	margin-bottom: 40px;
-	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+	/* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
 
 	/* height: auto; */
 }
 
 
 .sk1 {
-	offset-path: path('M70,0 A70,70 0 1,1 70,140 A70,70 0 1,1 70,0');
-	animation: move 4000ms infinite alternate ease-in-out;
+	offset-path: path('M 0 0 C 0.6667 0.3333 1.3333 0.6667 3 0');
+	animation: move 3000ms infinite alternate ease-in-out;
 }
 
 .sk2 {
-	offset-path: path('M70,0 A70,70 0 1,1 70,140 A70,70 0 1,1 70,0');
-	animation: move 5000ms infinite alternate ease-in-out;
+	offset-path: path('M 0 0 C 0.6667 0.3333 1.3333 0.6667 3 0');
+	animation: move 3500ms infinite alternate ease-in-out;
 }
 
 .sk3 {
-	offset-path: path('M70,0 A70,70 0 1,1 70,140 A70,70 0 1,1 70,0');
-	animation: move 6000ms infinite alternate ease-in-out;
+	offset-path: path('M 0 0 C 0.6667 0.3333 1.3333 0.6667 3 0');
+	animation: move 4000ms infinite alternate ease-in-out;
 }
 
 .sk4 {
-	offset-path: path('M70,0 A70,70 0 1,1 70,140 A70,70 0 1,1 70,0');
-	animation: move 7000ms infinite alternate ease-in-out;
+	offset-path: path('M 0 0 C 0.6667 0.3333 1.3333 0.6667 3 0');
+	animation: move 4500ms infinite alternate ease-in-out;
 }
 
 .sk5 {
-	offset-path: path('M70,0 A70,70 0 1,1 70,140 A70,70 0 1,1 70,0');
-	animation: move 8000ms infinite alternate ease-in-out;
+	offset-path: path('M 0 0 C 0.6667 0.3333 1.3333 0.6667 3 0');
+	animation: move 5000ms infinite alternate ease-in-out;
 }
 
 
 @keyframes move {
   0% {
     offset-distance: 0%;
+  }
+	10% {
+    box-shadow: -0.2rem 0 0.2rem rgb(195, 195, 195);
+  }
+	30% {
+    box-shadow: -0.2rem 0 0.2rem rgb(205, 205, 205);
+  }
+	50% {
+    box-shadow: -0.2rem 0 0.2rem rgb(215, 215, 215);
+  }
+  70% {
+    box-shadow: -0.2rem 0 0.2rem rgb(205, 205, 205);
+  }
+	90% {
+    box-shadow: -0.2rem 0 0.2rem rgb(195, 195, 195);
   }
   100% {
     offset-distance: 100%;

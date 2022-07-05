@@ -17,10 +17,10 @@ function About(props) {
 
 	// const greetings = ['Hi! I am', 'Ciao! Io sono', 'Hola! Yo soy', 'Bonjour! Je\'taime']
 	const aboutTraits = [
-		{description: 'creative educator', image: PortfolioEducation}, 
-		{description: 'heavy-metal guitarist', image: PortfolioMetal},
-		{description: 'volleyball player', image: PortfolioVolleyball},
-		{description: 'music aficionado', image: PortfolioMusic}
+		{description: 'creative educator', image: PortfolioEducation, paragraph: 'I am amazing.'}, 
+		{description: 'heavy-metal guitarist', image: PortfolioMetal, paragraph: 'I am so cool.'},
+		{description: 'volleyball player', image: PortfolioVolleyball, paragraph: 'What a man!'},
+		{description: 'music aficionado', image: PortfolioMusic, paragraph: 'Lean, mean, bean machine'}
 	]
 
 	// const [currentGreeting, setCurrentGreeting] = useState(greetings[0])
@@ -34,6 +34,8 @@ function About(props) {
 	const [triggerThirdEffect, setTriggerThirdEffect] = useState(false)
 	const [triggerFourthEffect, setTriggerFourthEffect] = useState(false)
 	const [resetLoop, setResetLoop] = useState(false)
+	const [pauseSlides, setPauseSlides] = useState(false)
+	const [checkPause, setCheckPause] = useState(false)
 
 	const parentDiv = {
 		position: 'relative',
@@ -69,12 +71,26 @@ function About(props) {
       return;
 		}
 		const secondTimeout = setTimeout(() => {
-			setShowTopLayer(false)
-			setFadeInClass(false)
-			setTriggerThirdEffect(!triggerThirdEffect)
+			setCheckPause(!checkPause)
+			// checkForPaused()
+			// setShowTopLayer(false)
+			// setFadeInClass(false)
+			// setTriggerThirdEffect(!triggerThirdEffect)
 		}, 4000)
 		return () => clearTimeout(secondTimeout)
 	} , [triggerSecondEffect] )
+
+	useEffect (() => {
+		if (fourthUpdate.current) {
+      fourthUpdate.current = false;
+      return;
+		}
+		if (pauseSlides) {
+			return
+		} else {
+			checkForPaused()
+		}
+	}, [checkPause] )
 	
 	
 		useEffect (() => {
@@ -83,19 +99,21 @@ function About(props) {
 				return;
 			}
 			setShowTopLayer(true)
-			if (currentTraitIndex < aboutTraits.length-1) {
-				// setCurrentTrait(aboutTraits[currentTraitIndex])    
-				setCurrentTraitIndex(currentTraitIndex + 1)
-				// setRerenderImage(!rerenderImage)
-			} else { 
-				setCurrentTraitIndex(0)
-				// setCurrentTraitIndex(1)
-				// setRerenderImage(!rerenderImage)
+			if (!pauseSlides) {
+				if (currentTraitIndex < aboutTraits.length-1) {
+					// setCurrentTrait(aboutTraits[currentTraitIndex])    
+					setCurrentTraitIndex(currentTraitIndex + 1)
+					// setRerenderImage(!rerenderImage)
+				} else { 
+					setCurrentTraitIndex(0)
+					// setCurrentTraitIndex(1)
+					// setRerenderImage(!rerenderImage)
+				}
+				const thirdTimeout = setTimeout(() => {
+					setTriggerFourthEffect(!triggerFourthEffect)
+				}, 350)
+				return () => clearTimeout(thirdTimeout)
 			}
-			const thirdTimeout = setTimeout(() => {
-				setTriggerFourthEffect(!triggerFourthEffect)
-			}, 350)
-			return () => clearTimeout(thirdTimeout)
 		}, [triggerThirdEffect] )
 
 
@@ -110,7 +128,22 @@ function About(props) {
 		setResetLoop(!resetLoop)
 	}, [triggerFourthEffect] )
 
+	function handlePauseSlides () {
+		setPauseSlides(true)
+	}
 
+	function handleContinueSlides () {
+		setPauseSlides(false)
+		setTriggerThirdEffect(!triggerThirdEffect)
+	}
+
+	function checkForPaused () {
+		if (!pauseSlides) {
+			setShowTopLayer(false)
+			setFadeInClass(false)
+			setTriggerThirdEffect(!triggerThirdEffect)
+		}
+	}
 
 
 	// useEffect(() => {
@@ -166,6 +199,12 @@ function About(props) {
 					<h2>full-stack developer /</h2>
 					<h2>software engineer /</h2>
 					<h2>{currentTrait.description}</h2>
+					{!pauseSlides 
+							? 
+						<button onClick={handlePauseSlides}>TELL ME MORE</button> 
+							:
+						<button onClick={handleContinueSlides}>CONTINUE</button> 
+					}
 				</div>
 				<div className='about-right' style={parentDiv}>
 					<img style={bottomLayer} src={PortfolioBackground} />
@@ -177,7 +216,12 @@ function About(props) {
 			</div> */}
 			</div>
 			<div className='comp-about' style={{marginTop: '-10px'}}>
-				<p>Career-changing educator with passion and talent for using technology to create inspiring educational material and websites to foster engagement and learning. Dedicated to following all necessary goals first, and then reaching well beyond. Not limited to, but skilled in React, JavaScript, Rails, Ruby, and CSS, and always fascinated to learn other languages and frameworks.  Hard-working, meticulous, and creative, but above all, an empathetic, kind, and collaborative member of his surrounding community.</p>
+				{pauseSlides
+						?
+					<p>{currentTrait.paragraph}</p>
+						:
+					<p>Career-changing educator with passion and talent for using technology to create inspiring educational material and websites to foster engagement and learning. Dedicated to following all necessary goals first, and then reaching well beyond. Not limited to, but skilled in React, JavaScript, Rails, Ruby, and CSS, and always fascinated to learn other languages and frameworks.  Hard-working, meticulous, and creative, but above all, an empathetic, kind, and collaborative member of his surrounding community.</p>
+				}
 			</div>
 		</div>
 	);

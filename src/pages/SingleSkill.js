@@ -15,11 +15,11 @@ function SingleSkill({skill}) {
 	console.log('className', randomClassName)
 
 	function randomTop () {
-		return Math.round(Math.random() * vh) - (vh * 0.15)
+		return Math.round(Math.random() * vh) - (vh * 0.05)
 	}
 
 	function randomLeft () {
-		return Math.round(Math.random() * vw)
+		return Math.round(Math.random() * vw) + 50
 	}
 
 	const skillStyle = {
