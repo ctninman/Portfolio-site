@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Tools({project}) {
+function Tools({displayedProject}) {
 	return (
 		<div>
-			<h2>GOAL: {project.goal}</h2>
+			<h2>GOAL: {displayedProject.goal}</h2>
 			<ul>
-				{project.techPoints.map(point => (
+				{displayedProject.techPoints.map(point => (
 					<li key={point}>{point}</li>
 				))}
 			</ul>

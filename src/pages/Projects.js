@@ -34,7 +34,7 @@ function Projects({projectRef}) {
 				))}
 			</div>
 			<SingleProject 
-				project={displayedProject}
+				displayedProject={displayedProject}
 				selectedView={selectedView}
 				setSelectedView={setSelectedView}
 			/>

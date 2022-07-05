@@ -4,13 +4,13 @@ import Features from './Features'
 import Tools from './Tools'
 import Story from './Story';
 
-function SingleProject({project, selectedView, setSelectedView}) {
+function SingleProject({displayedProject, selectedView, setSelectedView}) {
 
 	// const [selectedView, setSelectedView] = useState('video')
 
 	return (
 		<div className='single-project'>
-			<img className='project-logo' src={project.logo} />
+			<img className='project-logo' src={displayedProject.logo} />
 			<div className='project-details'>
 				<div className='project-sidebar'>
 					<button onClick={() => setSelectedView('story')}>Story</button>
@@ -19,10 +19,10 @@ function SingleProject({project, selectedView, setSelectedView}) {
 					<button onClick={() => setSelectedView('tools')}>Tools</button>
 				</div>
 				<div className='project-main'>
-					{selectedView === 'video' ? <YoutubeEmbed embedId={project.youtubeEmbedID} /> : null }
-					{selectedView === 'features' ? <Features project={project}/> : null}
-					{selectedView === 'tools' ? <Tools project={project}/> : null}
-					{selectedView === 'story' ? <Story project={project}/> : null}
+					{selectedView === 'video' ? <YoutubeEmbed embedId={displayedProject.youtubeEmbedID} /> : null }
+					{selectedView === 'features' ? <Features displayedProject={displayedProject}/> : null}
+					{selectedView === 'tools' ? <Tools displayedProject={displayedProject}/> : null}
+					{selectedView === 'story' ? <Story displayedProject={displayedProject}/> : null}
 				</div>
 			</div>	
 			{/* <img style={{width: '90%', marginLeft: '5%'}} src={project.thumbnail} /> */}

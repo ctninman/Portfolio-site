@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Story({project}) {
+function Story({displayedProject}) {
 	return (
 		<div>
-			{project.description.map(description => (
+			{displayedProject.description.map(description => (
 				<p>{description}</p>
 			))}
 		</div>

@@ -1,10 +1,10 @@
 import React from 'react';
 
-function Features({project}) {
+function Features({displayedProject}) {
 	return (
 		<div>
 			<ul>
-				{project.features.map(feature => (
+				{displayedProject.features.map(feature => (
 					<li key={feature}>{feature}</li>
 				))}
 			</ul>
