@@ -13,7 +13,7 @@ import KidsLogo from '../images/take-the-kids-out-logo.png'
 
 function Projects({projectRef}) {
 
-	export const allProjects = [
+	const allProjects = [
 		{
 			appName: 'Curate-ify',
 			technologiesUsed: 'React, JavaScript, CSS, RubyOnRails, Heroku, Canva, Figma',
