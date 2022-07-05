@@ -8,7 +8,7 @@ function SingleProject({displayedProject, selectedView, setSelectedView}) {
 
 	// const [selectedView, setSelectedView] = useState('video')
 
-	return displayedProject ? (
+	return (
 		<div className='single-project'>
 			<img className='project-logo' src={displayedProject.logo} />
 			<div className='project-details'>
@@ -27,8 +27,7 @@ function SingleProject({displayedProject, selectedView, setSelectedView}) {
 			</div>	
 			{/* <img style={{width: '90%', marginLeft: '5%'}} src={project.thumbnail} /> */}
 		</div>
-	)
-	: null
+	);
 }
 
 export default SingleProject;
