@@ -3,6 +3,7 @@ import {blogPosts} from './variables.js'
 import BlogPost from './BlogPost'
 
 function Blog({blogRef}) {
+	
 	return (
 		<div ref={blogRef} className='comp-blogs'>
 			<h1>BLOG POSTS</h1>

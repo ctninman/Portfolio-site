@@ -8,7 +8,7 @@ function SingleProjectThumb({project, setDisplayedProject, displayedProject, set
 	}
 	
 	function handleProjectSelect () {
-		// setSelectedView('story')
+		setSelectedView('story')
 		setDisplayedProject(project)
 	}
 	

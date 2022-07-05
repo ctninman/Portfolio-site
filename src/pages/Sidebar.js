@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Sidebar(props) {
+function Sidebar({aboutRef, projectRef, blogRef, skillRef, contactRef}) {
 	return (
 		<div className='comp-sidebar'>
 			<div>

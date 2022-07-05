@@ -18,7 +18,7 @@ function Projects({projectRef}) {
 
 	}
 
-	return (
+	return allProjects ? (
 		<div ref={projectRef} style={projectDiv}>
 			<h1 style={projecth1}>MY PROJECTS</h1>
 			<div className='comp-projects'>
@@ -39,7 +39,8 @@ function Projects({projectRef}) {
 				setSelectedView={setSelectedView}
 			/>
 		</div>
-	);
+	) 
+	: null
 }
 
 export default Projects;

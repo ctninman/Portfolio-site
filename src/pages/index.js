@@ -154,7 +154,13 @@ const IndexPage = () => {
         skillRef={skillRef}
         contactRef={contactRef}
       />
-      <Sidebar />
+      <Sidebar         
+        aboutRef={aboutRef}
+        projectRef={projectRef}
+        blogRef={blogRef}
+        skillRef={skillRef}
+        contactRef={contactRef}
+      />
       <div className='page-style'>
         <About aboutRef={aboutRef}/>
         <Projects projectRef={projectRef}/>

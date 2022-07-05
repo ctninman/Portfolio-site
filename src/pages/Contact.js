@@ -3,6 +3,7 @@ import React from 'react';
 function Contact({contactRef}) {
 	return (
 		<div ref={contactRef} className='comp-contact'>
+			<h1>CONTACT ME</h1>
 			<div className='single-contact'>
 				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" /> 
 				<h1><a href='https://www.linkedin.com/in/christopher-ninman/'>linkedin.com/in/christopher-ninman/</a></h1>
